@@ -1,26 +1,59 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import "./App.css";
+import Header from "./components/Header";
+import Projects from "./components/Projects";
+import About from "./components/About";
+import Skills from "./components/Skills";
+import Footer from "./components/Footer";
+import Contact from "./components/Contact";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      class: "about"
+    };
+  }
+
+  handleClass = name => {
+    if (name === "about") {
+      this.setState({
+        class: "about"
+      });
+    }
+    if (name === "projects") {
+      this.setState({
+        class: "projects"
+      });
+    }
+    if (name === "skills") {
+      this.setState({
+        class: "skills"
+      });
+    }
+  };
+
+  render() {
+    return (
+      <div className="App">
+        
+        <Router>
+          <Header class={this.state.class} handleClass={this.handleClass} />
+
+          <div>
+            <Switch>
+              <Route exact path="/" component={About} />
+              <Route exact path="/projects" component={Projects} />
+              <Route exact path="/skills" component={Skills} />
+            </Switch>
+          </div>
+          <Contact />
+          <Footer />
+        </Router>
+      </div>
+    );
+  }
 }
 
 export default App;
