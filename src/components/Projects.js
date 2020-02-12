@@ -14,21 +14,24 @@ class Projects extends Component {
           content:
             "Android application myTrip for cost-adjusted trip planning and route. This is the final project in BSC in Information Systems.",
           language: null,
-          link: null
+          link: null,
+          github:null
         },
         {
           title: "MY PORTFOLIO",
           image: portfolio,
           content: "My portfolio website.",
-          language: "HTML, CSS, JavaScript",
-          link: null
+          language: "ReactJS, HTML, CSS, JavaScript",
+          link: null,
+          github:"https://github.com/ChenGanon/portfolio"
         },
         {
           title: "NEWS APP",
           image: news,
           content: "Real-time news app used with REST API-'newsAPI'",
-          language: "Angular,HTML, CSS, Bootstrap, node.js(express)",
-          link: "https://news--app.herokuapp.com/"
+          language: "ReactJS ,HTML, CSS, Bootstrap.",
+          link: "https://news-react-app.netlify.com/",
+          github:"https://github.com/ChenGanon/news"
         }
       ]
     };

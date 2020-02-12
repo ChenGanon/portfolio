@@ -6,7 +6,7 @@ import About from "./components/About";
 import Skills from "./components/Skills";
 import Footer from "./components/Footer";
 import Contact from "./components/Contact";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 class App extends Component {
   constructor(props) {

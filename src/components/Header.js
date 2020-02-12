@@ -10,10 +10,8 @@ function Header(props) {
             Hi I'm Chen, <span>Junior Front-end Developer </span>
           </h1>
           <h2>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum
-            vero est quis commodi consequatur! Voluptates porro, similique
-            facere neque, officiis ullam nostrum consequuntur repudiandae
-            molestiae beatae incidunt accusantium earum aliquam.
+            Graduate Bsc in information system.<br/>
+             Looking for a Front End development job
           </h2>
           <nav>
             <ul id="nav">
@@ -24,7 +22,7 @@ function Header(props) {
                 onClick={() => props.handleClass("about")}
               >
                 <li
-                  className={props.class==="about" ? "active" : "no-active"}
+                  className={props.class === "about" ? "active" : "no-active"}
                   id="about"
                 >
                   About
@@ -37,7 +35,9 @@ function Header(props) {
                 onClick={() => props.handleClass("projects")}
               >
                 <li
-                  className={props.class==="projects" ? "active" : "no-active"}
+                  className={
+                    props.class === "projects" ? "active" : "no-active"
+                  }
                   id="project"
                 >
                   Projects
@@ -50,7 +50,7 @@ function Header(props) {
                 onClick={() => props.handleClass("skills")}
               >
                 <li
-                  className={props.class==="skills" ? "active" : "no-active"}
+                  className={props.class === "skills" ? "active" : "no-active"}
                   id="skills"
                 >
                   Skills
