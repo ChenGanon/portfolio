@@ -60,6 +60,71 @@ nav ul {
   margin-left: 20px;
 }
 
+/* .imgBox input{
+		display: none;
+	
+} */
+
+.slide_img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+img, iframe {
+  width: inherit;
+  height: inherit;
+}
+
+.prev, .next {
+  width: 12%;
+  height: inherit;
+  position: absolute;
+  top: 0;
+  background-color: #4b4b4b;
+  opacity: 0.2;
+  /* background-color: rgba(255, 82, 82, .2); */
+  z-index: 99;
+  transition: .45s;
+  cursor: pointer;
+  text-align: center;
+}
+.next {
+  right: 0;
+}
+.prev {
+  left: 0;
+}
+
+
+.prev:hover, .next:hover {
+  transition: .3s;
+  background-color: #4b4b4b;
+  opacity: 0.8;
+  /* background-color: rgba(255, 82, 82, .8); */
+}
+
+.prev span, .next span {
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  border: solid 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.prev span {
+  border-color: transparent #fff transparent transparent;
+  right: 35%;
+}
+.next span {
+  border-color: transparent transparent transparent #fff;
+  left: 35%;
+}
+
+
+
 #nav li {
   font-weight: 600;
   padding: 10px;
@@ -279,7 +344,6 @@ footer {
 .box a {
   text-decoration: none;
   color: #17c0eb;
-  
 }
 
 .box-icon {
@@ -294,14 +358,13 @@ footer {
   transition: 0.3s linear;
 }
 
-.box:hover .box-icon{
+.box:hover .box-icon {
   background-color: #4b4b4b;
   color: #17c0eb;
-  transform: scale(1.6)
-
+  transform: scale(1.6);
 }
 
-.box p{
+.box p {
   margin-top: 20px;
 }
 
@@ -345,9 +408,9 @@ input[type="submit"] {
   cursor: pointer;
 }
 
-.git{
-  color: black ;
-  font-size: 24px
+.git {
+  color: black;
+  font-size: 24px;
 }
 
 /* mobil */
@@ -357,6 +420,10 @@ input[type="submit"] {
       display: flex;
       flex-direction: column;
     } */
+
+    iframe , label{
+      display: none;
+    }
   .size {
     width: 100%;
     margin: 0 auto;
@@ -402,18 +469,14 @@ input[type="submit"] {
     display: flex;
     width: 100%;
     flex-wrap: wrap;
-
   }
-  
+
   .box {
     flex-direction: column;
     max-width: 100%;
     width: 100%;
-
   }
 }
-
-
 
 @media screen and (max-width: 1000px) {
   .card {
@@ -421,6 +484,7 @@ input[type="submit"] {
     width: 350px;
     margin: 10px;
   }
+  
 
   .card .imgBox {
     width: 100%;
@@ -450,24 +514,18 @@ input[type="submit"] {
     font-size: 0.8rem;
   }
 
-  .box-info{
+  .box-info {
     width: 100%;
     flex-direction: column;
   }
   .box {
     width: inherit !important;
-
   }
 }
 
 @media screen and (max-width: 1263px) {
-  
   .box {
     width: 40%;
     margin: 10px;
   }
-
-
-
-
 }

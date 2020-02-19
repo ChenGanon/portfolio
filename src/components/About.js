@@ -1,23 +1,24 @@
-import React from 'react'
+import React from "react";
 
 function About() {
-    return (
-        <main>
-        <section className="about" id="tab-about">
-          <div className="size">
-            <h2>ABOUT ME</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
-              blanditiis ipsum eos quam, amet consequuntur placeat dolore
-              debitis modi, ad cupiditate suscipit rerum dolorem fugiat optio
-              sed ut fuga illo! Deleniti optio, quis, obcaecati nostrum
-              provident officia ipsam perspiciatis veritatis maxime perferendis
-              hic tempora dignissimos est cupiditate, ad omnis architecto.
-            </p>
-          </div>
-        </section>
-        </main>
-    )
+  return (
+    <main>
+      <section className="about" id="tab-about">
+        <div className="size">
+          <h2>ABOUT ME</h2>
+          <p className="about-me">
+            Graduated B.Sc in Information Systems at Max Stern Yezreel valley
+            college with GPA 93. <br />I have high motivation to learn and have
+            a high learning ability. I perform end-to-end tasks with reference
+            to the small details and systemic vision.
+            <br />
+            Knowledge in HTML, CSS, JavaScript, bootstrap, jQuery, ReactJS, SQL,
+            Java.
+          </p>
+        </div>
+      </section>
+    </main>
+  );
 }
 
-export default About
+export default About;
