@@ -10,7 +10,7 @@ function Header(props) {
             Hi I'm Chen, <span>Junior Front-end Developer </span>
           </h1>
           <h2>
-            Graduate Bsc in information system.<br/>
+            Graduate Bsc in information systems.<br/>
              Looking for a Front End development job
           </h2>
           <nav>
