@@ -7,11 +7,11 @@ function Header(props) {
       <header>
         <div className="size">
           <h1>
-            Hi I'm Chen, <span>Junior Front-end Developer </span>
+            Hi I'm Chen, <span>Junior Full Stack Developer </span>
           </h1>
           <h2>
             Graduate Bsc in information systems.<br/>
-             Looking for a Front End development job
+             Looking for a full stack development job
           </h2>
           <nav>
             <ul id="nav">
