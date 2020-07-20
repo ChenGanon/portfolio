@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import Project from "./Project";
 import mytrip from "../images/myTrip.png";
+import timeIsUp from "../images/time-is-up.PNG";
+import snake from "../images/snake.PNG";
 import news from "../images/news.PNG";
 import portfolio from "../images/portfolio.PNG";
 import weather from "../images/weather.PNG";
@@ -17,6 +19,17 @@ class Projects extends Component {
             "MY TRIP - android application for planning a trip by budget.  AS part of a final project in information systems studies.",
           language: null,
           github: null,
+          website: null,
+          imageIndex: 0
+        },
+        {
+          title: "TIME IS UP",
+          image: [timeIsUp, "https://time-is--up.herokuapp.com/"],
+          content:
+            "A web app that keeps track on expiration dates of products and items. The system displays the time until the expiration of the item that the user enters according to different categories",
+          language: "ReactJS, Redux, NodeJS, HTML, CSS, Bootstrap.",
+          github: null,
+          website: "https://time-is--up.herokuapp.com/",
           imageIndex: 0
         },
         {
@@ -25,14 +38,16 @@ class Projects extends Component {
           content: "My portfolio website.",
           language: "ReactJS, HTML, CSS, JavaScript",
           github: "https://github.com/ChenGanon/portfolio",
+          website: null,
           imageIndex: 0
         },
         {
           title: "NEWS APP",
-          image: [news, "https://news-react-app.netlify.com/"],
+          image: [news],
           content: "Real-time news app using with REST API-'newsAPI'",
           language: "ReactJS ,HTML, CSS, Bootstrap.",
           github: "https://github.com/ChenGanon/news",
+          website: null,
           imageIndex: 0
         },
         {
@@ -41,6 +56,16 @@ class Projects extends Component {
           content: "Real-time weather app using with REST API",
           language: "ReactJS ,HTML, CSS.",
           github: "https://github.com/ChenGanon/weather",
+          website: "https://weather-reactapp.netlify.com/",
+          imageIndex: 0
+        },
+        {
+          title: "SNAKE GAME",
+          image: [snake],
+          content: "",
+          language: "ReactJS ,HTML, CSS.",
+          github: "https://github.com/ChenGanon/snake-game",
+          website: "https://reactapp-snake-game.netlify.app/",
           imageIndex: 0
         }
       ],

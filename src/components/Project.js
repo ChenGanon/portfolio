@@ -43,6 +43,14 @@ function Project(props) {
               </a>
             </p>
           ) : null}
+          {props.projects.website !== null ? (
+            <p>
+              <a href={props.projects.website} target="_blank">
+                {" "}
+                Link to site
+              </a>
+            </p>
+          ) : null}
         </div>
       </div>
     </div>
