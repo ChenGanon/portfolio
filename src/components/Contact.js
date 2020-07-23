@@ -31,6 +31,12 @@ class Contact extends Component {
               </a>
               <p>My Github </p>
             </div>
+            <div className="box">
+              <a href="https://linkedin.com/in/chen-ganon" target="_blank">
+              <i className="box-icon fab fa-linkedin"></i>
+              </a>
+              <p>My Linkedin</p>
+            </div>
           </div>
         </section>
       </main>
