@@ -4,6 +4,7 @@
   box-sizing: border-box;
   font-family: "Rubik", sans-serif;
   /* overflow: auto; */
+  
 }
 
 body {
@@ -11,6 +12,18 @@ body {
   display: flex;
   flex-direction: column;
   font-size: 16px;
+  width:100%;
+  overflow-x: hidden;
+}
+  
+ 
+
+
+.App{
+  position: relative;
+  width:100%;
+  overflow-x: hidden;
+ 
 }
 
 .size {
@@ -136,6 +149,8 @@ iframe {
 .active {
   color: #17c0eb;
 }
+
+
 
 .active::after {
   position: relative;
@@ -414,13 +429,67 @@ input[type="submit"] {
   font-size: 24px;
 }
 
+.accessibility {
+  position: absolute;
+  top: 150px;
+  /* right: 150px; */
+  right: 0;
+  width: 50px;
+  height: 50px;
+  font-size: 40px;
+  background-color: powderblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 16px 0 0 16px;
+  cursor: pointer;
+
+  transition: 0.5s;
+}
+
+.menu-accessibility {
+  width: 150px;
+  height: fit-content;
+  position: absolute;
+  top: 150px;
+  right: -150px;
+  /* right: 0; */
+  background-color: #fff;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+
+
+.show{
+  right: 0;
+}
+
+.show-icon{
+  right: 150px;
+}
+
+.accessibility-item{
+  line-height: 32px;
+  text-align: right;
+  padding-right: 10px;
+  cursor: pointer;
+}
+
+.active-a{
+  color: #17c0eb;
+  border: 1px dashed black !important;;
+}
+
+
+
 /* mobil */
 @media screen and (max-width: 767px) {
-  /* body {
-      text-align: center;
+  body {
+      /* text-align: center;
       display: flex;
-      flex-direction: column;
-    } */
+      flex-direction: column; */
+    }
 
   iframe,
   label {

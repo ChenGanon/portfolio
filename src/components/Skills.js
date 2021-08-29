@@ -20,7 +20,6 @@ function Skills() {
                 <i className="devicon-javascript-plain colored"></i>
                 JavaScript
               </li>
- 
             </ul>
           </div>
           <div className="back bs">
@@ -29,10 +28,15 @@ function Skills() {
               <li>
                 <i className="devicon-nodejs-plain colored"></i>Node.js
               </li>
-              <li><i className="devicon-mongodb-plain colored"></i>MongoDB
-</li>
-<li><i className="devicon-mysql-plain-wordmark colored"></i>SQL
-</li>
+              <li>
+                <i className="devicon-mongodb-plain colored"></i>MongoDB
+              </li>
+              <li>
+                <i className="devicon-mysql-plain-wordmark colored"></i>SQL
+              </li>
+              <li>
+                <i class="devicon-php-plain colored"></i>PHP
+              </li>
             </ul>
           </div>
           <div className="framwork bs">
@@ -46,6 +50,10 @@ function Skills() {
               </li>
               <li>
                 <i className="devicon-react-original colored"></i>ReactJS
+              </li>
+              <li>
+                <i class="devicon-express-original-wordmark colored"></i>
+                Express
               </li>
             </ul>
           </div>

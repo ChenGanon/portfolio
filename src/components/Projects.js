@@ -6,6 +6,8 @@ import snake from "../images/snake.PNG";
 import news from "../images/news.PNG";
 import portfolio from "../images/portfolio.PNG";
 import weather from "../images/weather.PNG";
+import metukanet from "../images/metukanet.PNG";
+
 class Projects extends Component {
   constructor(props) {
     super(props);
@@ -30,6 +32,15 @@ class Projects extends Component {
           language: "ReactJS, Redux, NodeJS, HTML, CSS, Bootstrap.",
           github: null,
           website: "https://time-is--up.herokuapp.com/",
+          imageIndex: 0
+        },
+        {
+          title: "METUKANET",
+          image: [metukanet],
+          content: "Online Store - Setting up an online store on Wordpress with a woocommerce plugin. Project included designing, optimizing images and adapting the site to the needs of the store.",
+          language: "HTML, CSS, WordPress, Woocommerce.",
+          github: null,
+          website: "https://metukanet.co.il",
           imageIndex: 0
         },
         {
@@ -59,15 +70,16 @@ class Projects extends Component {
           website: "https://weather-reactapp.netlify.com/",
           imageIndex: 0
         },
-        {
-          title: "SNAKE GAME",
-          image: [snake],
-          content: "",
-          language: "ReactJS ,HTML, CSS.",
-          github: "https://github.com/ChenGanon/snake-game",
-          website: "https://reactapp-snake-game.netlify.app/",
-          imageIndex: 0
-        }
+     
+        // {
+        //   title: "SNAKE GAME",
+        //   image: [snake],
+        //   content: "",
+        //   language: "ReactJS ,HTML, CSS.",
+        //   github: "https://github.com/ChenGanon/snake-game",
+        //   website: "https://reactapp-snake-game.netlify.app/",
+        //   imageIndex: 0
+        // }
       ],
       index: 0
     };
@@ -86,16 +98,19 @@ class Projects extends Component {
       <main>
         <section className="project" id="tab-project">
           <h2>PROJECTS</h2>
+          
+
           <div className="containerS" id="containerS">
             {this.state.projectss.map(projectt => (
               <Project
-                key={projectt.title}
-                projects={projectt}
-                index={this.state.index}
-                change={this.change}
+              key={projectt.title}
+              projects={projectt}
+              index={this.state.index}
+              change={this.change}
               />
-            ))}
+              ))}
           </div>
+            
         </section>
       </main>
     );

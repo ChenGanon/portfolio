@@ -8,6 +8,7 @@ import Footer from "./components/Footer";
 import Contact from "./components/Contact";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
+
 class App extends Component {
   constructor(props) {
     super(props);
@@ -17,21 +18,26 @@ class App extends Component {
   }
 
   handleClass = name => {
-    if (name === "about") {
-      this.setState({
-        class: "about"
-      });
+    switch (name) {
+      case "about":
+        this.setState({
+          class: "about"
+        });
+        break;
+        case "projects":
+            this.setState({
+              class: "projects"
+            });
+            break
+        case "skills":
+            this.setState({
+              class: "skills"
+            });
+            break;
+      default:
+        break;
     }
-    if (name === "projects") {
-      this.setState({
-        class: "projects"
-      });
-    }
-    if (name === "skills") {
-      this.setState({
-        class: "skills"
-      });
-    }
+
   };
 
   render() {
@@ -39,7 +45,8 @@ class App extends Component {
       <div className="App">
         
         <Router>
-          <Header class={this.state.class} handleClass={this.handleClass} />
+        
+          <Header class={window.location.pathname} handleClass={this.handleClass} />
 
           <div>
             <Switch>
